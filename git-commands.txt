@@ -1,0 +1,61 @@
+
+C:\Users\shahzaib.rashid>cd Desktop
+
+C:\Users\shahzaib.rashid\Desktop>mkdir test
+
+C:\Users\shahzaib.rashid\Desktop>cd test
+
+C:\Users\shahzaib.rashid\Desktop\test>echo.> abcdef.txt
+
+C:\Users\shahzaib.rashid\Desktop\test>git init
+Initialized empty Git repository in C:/Users/shahzaib.rashid/Desktop/test/.git/
+
+C:\Users\shahzaib.rashid\Desktop\test>git add abcdef.txt
+
+C:\Users\shahzaib.rashid\Desktop\test>git commit -m "this is my comment which will show be shown for reference"
+[master (root-commit) be31e23] this is my comment which will show be shown for reference
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abcdef.txt
+
+C:\Users\shahzaib.rashid\Desktop\test>git remote add origin https://github.com/shahzaiButt/JenkinsRepo
+
+C:\Users\shahzaib.rashid\Desktop\test>git push -f origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 255 bytes | 255.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shahzaiButt/JenkinsRepo
+ + 158a15d...be31e23 master -> master (forced update)
+
+C:\Users\shahzaib.rashid\Desktop\test>git add IMG_6516.jpeg
+
+C:\Users\shahzaib.rashid\Desktop\test>git commit -m "this is my picture"
+[master 74dbccd] this is my picture
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 IMG_6516.jpeg
+
+C:\Users\shahzaib.rashid\Desktop\test>git push -f origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 453.13 KiB | 34.86 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shahzaiButt/JenkinsRepo
+   be31e23..74dbccd  master -> master
+
+C:\Users\shahzaib.rashid\Desktop\test>git add abcdef.txt
+
+C:\Users\shahzaib.rashid\Desktop\test>git commit -m "updated txt"
+[master 9e11382] updated txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\shahzaib.rashid\Desktop\test>git push -f origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 324 bytes | 324.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shahzaiButt/JenkinsRepo
+   74dbccd..9e11382  master -> master
