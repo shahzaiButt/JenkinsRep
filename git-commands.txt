@@ -59,3 +59,13 @@ Writing objects: 100% (3/3), 324 bytes | 324.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/shahzaiButt/JenkinsRepo
    74dbccd..9e11382  master -> master
+
+branch status:	git branch (Should do atleast 1 commit to see branches)
+
+delete branch:	git branch -d branchname
+
+murge branch: git merge (branch name to add in current branch)
+
+switch branch:	git checkout branchname
+
+make new branch and switch to it:	git checkout -b branchName

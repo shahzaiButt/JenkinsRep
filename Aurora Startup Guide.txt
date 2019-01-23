@@ -1,0 +1,27 @@
+ install on ec2 : sudo yum install mysql
+
+mysql -h mydbinstance.cdkks7pprcfk.us-east-1.rds.amazonaws.com  -P 3306 -u admin -p  
+
+create database mydb1;
+
+use mydb1;
+
+select database();
+
+show tables;
+
+drop table tablename;
+
+create table amazon_reviews_multilingual_US_v1_00( marketplace char(2) , customer_id integer, review_id varchar(14), 
+product_id varchar(10), product_parent integer, product_title varchar(400), product_category varchar(24), star_rating smallint,
+helpful_votes smallint, total_votes smallint, vine boolean,verified_purchase boolean, review_headline varchar(128), review_body varchar(1500),
+review_date date,PRIMARY KEY (product_id));
+
+
+describe tablename;
+
+LOAD DATA FROM S3  's3://shahzaibbucket/sample_us.tsv' into table amazon_reviews_multilingual_US_v1_00;
+
+LOAD DATA FROM S3  's3://amazon-reviews-pds/tsv/amazon_reviews_multilingual_US_v1_00.tsv.gz' into table amazon_reviews_multilingual_US_v1_00
+
+ERROR 1871 (HY000): S3 API returned error: Both aurora_load_from_s3_role and aws_default_s3_role are not specified, please see documentation for more details
